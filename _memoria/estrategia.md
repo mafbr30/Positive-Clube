@@ -6,7 +6,11 @@
 
 ## Fase
 
+Lançamento (landing page)
+
 ## Prioridade principal
+
+Landing page website da Academia Positive Clube — recomeçando do zero (identidade visual em `identidade/design-guide.md` é o único ponto de partida fixo)
 
 ## O que pode esperar
 

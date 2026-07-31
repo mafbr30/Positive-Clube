@@ -1,11 +1,59 @@
-# MazyOS — Sistema operacional do negócio
+# Academia Positive Clube — MazyOS
 
-Sua empresa roda em cima desse arquivo. Aqui ficam as regras de operação
-do MazyOS — como o Claude lê o contexto, aprende com correções, mantém
-tudo atualizado e cria skills novas conforme a operação evolui.
+> Sistema operacional da Academia Positive Clube dentro do Claude Code.
+> Aqui ficam as regras de operação — como o Claude lê o contexto, aprende
+> com correções, mantém tudo atualizado e cria skills novas conforme a
+> operação evolui.
 
-Esse arquivo é editável. Quando o `/instalar` rodar, ele complementa o
-final dessa página com as regras específicas do seu negócio.
+## O que é esse workspace
+
+Operação da Academia Positive Clube. Sistema de marketing, conteúdo e
+produção da academia — foco atual é a landing page do site.
+
+**Estrutura de pastas:**
+- `_memoria/` — quem é a empresa, como falamos, foco atual
+- `identidade/` — marca aplicada em tudo que o sistema gera
+- `marketing/` — campanhas, conteúdo, mídia paga
+- `projetos/` — projetos que envolvem mais de uma frente (ex: landing page)
+- `saidas/` — documentos pontuais
+- `dados/` — arquivos a analisar
+- `scripts/` — automações e ferramentas de apoio
+
+## Sobre a empresa
+
+Academia Positive Clube é uma academia com múltiplas modalidades —
+musculação, natação, hidroginástica, lutas em geral e funcional.
+Atende público de todas as idades, de crianças a idosos.
+
+Setores, equipe e ferramentas ainda não foram detalhados — complementar
+em `_memoria/empresa.md` quando fizer sentido.
+
+## O que mais fazemos aqui
+
+- Landing page website (projeto atual — identidade em `identidade/design-guide.md`)
+
+## Tom de voz
+
+Ainda não calibrado (exemplo de escrita real e o que evitar não foram
+coletados). Ver `_memoria/preferencias.md` — pode ser preenchido a
+qualquer momento, direto ou rodando `/atualizar`.
+
+## Regras do sistema
+
+- Projetos que cruzam frentes ficam em `projetos/`
+- Documentos pontuais em `saidas/`
+- Toda peça visual (site, carrossel, post) segue `identidade/design-guide.md`
+
+## Ferramentas conectadas
+
+- [ ] Notion
+- [ ] Gmail
+- [ ] Google Calendar
+- [ ] Google Ads
+- [ ] Meta Ads
+- [ ] Slack
+
+*(Marcar conforme for instalando os MCPs)*
 
 ---
 

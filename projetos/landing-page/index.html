@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Academia Positive Clube — Construa o Melhor de Você</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700;800&family=Nunito+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav__row">
+    <a href="#home" class="logo">
+      <img src="assets/img/logo.svg" alt="Academia Positive Clube" class="logo__img">
+    </a>
+
+    <nav class="menu" id="menu">
+      <a href="#home" class="menu__link is-active">Início</a>
+      <a href="#sobre" class="menu__link">Sobre</a>
+      <a href="#modalidades" class="menu__link">Modalidades</a>
+      <a href="#planos" class="menu__link">Planos</a>
+      <a href="#contato" class="menu__link">Contato</a>
+    </nav>
+
+    <a href="#matricula" class="btn btn--cta">
+      <svg viewBox="0 0 24 24" class="icon"><circle cx="9" cy="7" r="4"/><path d="M2 21c0-3.9 3.1-7 7-7s7 3.1 7 7"/><path d="M19 8v6M22 11h-6"/></svg>
+      Matricule-se já
+    </a>
+
+    <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" class="icon"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container hero__top">
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <span class="hero__title-line">Construa o</span>
+        <span class="hero__title-line hero__title-line--accent">Melhor de Você</span>
+      </h1>
+      <p class="hero__text">
+        O clube mais completo da região. Pra todas as idades, em um só lugar.
+      </p>
+      <div class="hero__actions">
+        <a href="#planos" class="btn btn--cta btn--lg">Ver planos</a>
+        <a href="https://wa.me/558331422373?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental%20na%20Academia%20Positive%20Clube." target="_blank" rel="noopener" class="btn btn--outline btn--lg">Agendar aula experimental</a>
+      </div>
+    </div>
+
+    <div class="hero__media">
+      <img src="assets/img/hero.png" alt="Aluno treinando na Academia Positive Clube" class="hero__photo">
+      <div class="hero__brand-strip" aria-hidden="true">
+        <span class="hero__brand-strip-name">CLUBE</span>
+        <span class="hero__brand-strip-name">POSITIVE</span>
+        <span class="hero__brand-strip-name">ACADEMIA</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <ul class="features">
+      <li class="feature">
+        <span class="feature__icon">
+          <svg viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+        </span>
+        <span class="feature__body">
+          <strong>Todas as idades</strong>
+          De crianças a idosos
+        </span>
+      </li>
+      <li class="feature">
+        <span class="feature__icon">
+          <svg viewBox="0 0 24 24"><path d="M6 7v10M2 9v6M18 7v10M22 9v6M6 12h12"/></svg>
+        </span>
+        <span class="feature__body">
+          <strong>Musculação</strong>
+          Estrutura completa de treino
+        </span>
+      </li>
+      <li class="feature">
+        <span class="feature__icon">
+          <svg viewBox="0 0 24 24"><path d="M2 17c1.5 1.3 3 1.3 4.5 0s3-1.3 4.5 0 3 1.3 4.5 0 3-1.3 4.5 0M2 12c1.5 1.3 3 1.3 4.5 0s3-1.3 4.5 0 3 1.3 4.5 0 3-1.3 4.5 0M12 3v6"/></svg>
+        </span>
+        <span class="feature__body">
+          <strong>Piscina</strong>
+          Natação e hidroginástica
+        </span>
+      </li>
+      <li class="feature">
+        <span class="feature__icon">
+          <svg viewBox="0 0 24 24"><path d="M7 12a3 3 0 1 1 3-3M16 8l3-3M7 12l-3 3 2 5 5-2 3-3M14 5l5 5"/></svg>
+        </span>
+        <span class="feature__body">
+          <strong>Lutas & funcional</strong>
+          Várias modalidades, um só lugar
+        </span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="container sobre__row">
+    <div class="sobre__content">
+      <span class="badge">Sobre o projeto</span>
+      <h2 class="sobre__title">O novo point de Itabaiana</h2>
+      <p class="sobre__text">
+        A Academia Positive Clube nasce da reforma completa do antigo
+        Clube de Itabaiana — um espaço que já fez parte da história da
+        cidade e agora ganha vida nova na <em>Av. Deputado Adauto Pereira
+        de Lima, no Alto Alegre</em>.
+      </p>
+      <p class="sobre__text">
+        A região nunca teve um clube desse porte: musculação, natação,
+        hidroginástica, lutas em geral e treino funcional reunidos num
+        único endereço, pensado pra todas as idades.
+      </p>
+      <p class="sobre__highlight">Itabaiana nunca teve um clube assim.</p>
+    </div>
+
+    <div class="sobre__media">
+      <div class="video-frame">
+        <video
+          id="sobreVideo"
+          class="video-frame__video"
+          src="assets/video/sobre.mp4"
+          muted
+          autoplay
+          loop
+          playsinline
+          webkit-playsinline="true"
+          x5-playsinline="true"
+          preload="auto"
+        ></video>
+        <button class="video-frame__sound" id="soundToggle" aria-label="Ativar som do vídeo" aria-pressed="false">
+          <svg viewBox="0 0 24 24" class="icon" id="soundIconOff"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M23 9l-6 6M17 9l6 6"/></svg>
+          <svg viewBox="0 0 24 24" class="icon" id="soundIconOn" hidden><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a10 10 0 0 1 0 14"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="estrutura" id="modalidades">
+  <div class="container">
+    <div class="estrutura__head">
+      <h2 class="estrutura__title">
+        Nossas<br>modalidades
+      </h2>
+      <p class="estrutura__text">
+        Um clube completo pra cada fase da sua evolução — com
+        tecnologia, conveniência e comunidade em um só lugar.
+        Evolua com exclusividade e saúde.
+      </p>
+    </div>
+
+    <ul class="estrutura__grid">
+      <li class="service-card reveal">
+        <div class="service-card__media">Foto em breve</div>
+        <span class="service-card__label">Musculação</span>
+        <p class="service-card__text">Máquinas 100% novas, pensadas pra treinar com segurança e eficiência.</p>
+      </li>
+      <li class="service-card reveal">
+        <div class="service-card__media">Foto em breve</div>
+        <span class="service-card__label">Lutas</span>
+        <p class="service-card__text">Modalidades de luta pra todos os níveis, do iniciante ao avançado.</p>
+      </li>
+      <li class="service-card reveal">
+        <div class="service-card__media">Foto em breve</div>
+        <span class="service-card__label">Natação</span>
+        <p class="service-card__text">Piscina completa pra nadar com técnica e evoluir no seu ritmo.</p>
+      </li>
+      <li class="service-card reveal">
+        <div class="service-card__media">Foto em breve</div>
+        <span class="service-card__label">Hidroginástica</span>
+        <p class="service-card__text">Treino de baixo impacto na água, pra todas as idades.</p>
+      </li>
+      <li class="service-card reveal">
+        <div class="service-card__media">Foto em breve</div>
+        <span class="service-card__label">Vôlei</span>
+        <p class="service-card__text">Quadra de areia moderna pra jogar e treinar ao ar livre.</p>
+      </li>
+      <li class="service-card reveal">
+        <div class="service-card__media">Foto em breve</div>
+        <span class="service-card__label">Beach Tênis</span>
+        <p class="service-card__text">Quadra de areia pronta pra suas partidas, com estrutura completa.</p>
+      </li>
+      <li class="service-card reveal">
+        <div class="service-card__media">Foto em breve</div>
+        <span class="service-card__label">Crossfit</span>
+        <p class="service-card__text">Treino de alta intensidade, pra evoluir força e condicionamento.</p>
+      </li>
+      <li class="service-card reveal">
+        <div class="service-card__media">Foto em breve</div>
+        <span class="service-card__label">Funcional</span>
+        <p class="service-card__text">Treino funcional pra qualquer objetivo, do condicionamento à mobilidade.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="horario" id="horario">
+  <div class="container horario__head">
+    <h2 class="horario__title">Horário de <span class="horario__title-accent">Funcionamento</span></h2>
+    <span class="status-badge" id="statusBadge">
+      <span class="status-badge__dot" id="statusDot"></span>
+      <span id="statusText">Aberto agora</span>
+    </span>
+  </div>
+
+  <div class="container">
+    <ul class="horario__grid">
+      <li class="horario-card reveal">
+        <span class="horario-card__label">Segunda à sexta</span>
+        <span class="horario-card__hours">5h às 23h</span>
+      </li>
+      <li class="horario-card reveal">
+        <span class="horario-card__label">Sábados</span>
+        <span class="horario-card__hours">6h às 15h</span>
+      </li>
+      <li class="horario-card reveal">
+        <span class="horario-card__label">Domingos</span>
+        <span class="horario-card__hours">8h às 12h</span>
+      </li>
+    </ul>
+
+    <div class="horario__map-block">
+      <p class="horario__map-text">Venha nos visitar</p>
+      <div class="map-frame reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3488.3855693317655!2d-35.34274932558959!3d-7.322153972003315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ac65003782747f%3A0x3e5a92d33704da83!2sACADEMIA%20POSITIVE%20CLUB!5e1!3m2!1spt-BR!2sbr!4v1785525418672!5m2!1spt-BR!2sbr"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+          title="Localização da Academia Positive Clube no mapa"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="planos" id="planos">
+  <div class="container planos__head">
+    <span class="badge">Planos flexíveis</span>
+    <h2 class="planos__title">Escolha seu <span class="planos__title-accent">plano</span></h2>
+    <p class="planos__subtitle">Quanto maior o compromisso, maior a economia. Invista no seu resultado.</p>
+  </div>
+
+  <div class="container">
+    <ul class="planos__tiers">
+      <li class="tier-card reveal">
+        <div class="tier-card__row">
+          <span class="tier-card__period">Trimestral</span>
+          <span class="tier-card__pill">3 meses</span>
+        </div>
+        <div class="tier-card__price">
+          <span class="tier-card__old">R$ 140/mês</span>
+          <span class="tier-card__value">R$ 126<small>/mês</small></span>
+        </div>
+        <span class="tier-card__discount">10% off · Total R$ 378,00</span>
+        <ul class="tier-card__perks">
+          <li>Acesso ilimitado à academia</li>
+          <li>Sem taxa de matrícula</li>
+          <li>Pagamento único à vista</li>
+        </ul>
+        <a href="https://wa.me/558331422373?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Trimestral%20da%20Academia%20Positive%20Clube." target="_blank" rel="noopener" class="btn btn--outline">Assinar</a>
+      </li>
+
+      <li class="tier-card tier-card--highlight reveal">
+        <span class="tier-card__flag">Mais popular</span>
+        <div class="tier-card__row">
+          <span class="tier-card__period">Anual</span>
+          <span class="tier-card__pill">12 meses</span>
+        </div>
+        <div class="tier-card__price">
+          <span class="tier-card__old">R$ 140/mês</span>
+          <span class="tier-card__value">R$ 105<small>/mês</small></span>
+        </div>
+        <span class="tier-card__discount">25% off · Total R$ 1.260,00</span>
+        <ul class="tier-card__perks">
+          <li>Acesso ilimitado à academia</li>
+          <li>Sem taxa de matrícula</li>
+          <li>Pagamento único à vista</li>
+          <li>Máximo desconto disponível</li>
+        </ul>
+        <a href="https://wa.me/558331422373?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Anual%20da%20Academia%20Positive%20Clube." target="_blank" rel="noopener" class="btn btn--cta">Assinar</a>
+      </li>
+
+      <li class="tier-card reveal">
+        <div class="tier-card__row">
+          <span class="tier-card__period">Semestral</span>
+          <span class="tier-card__pill">6 meses</span>
+        </div>
+        <div class="tier-card__price">
+          <span class="tier-card__old">R$ 140/mês</span>
+          <span class="tier-card__value">R$ 119<small>/mês</small></span>
+        </div>
+        <span class="tier-card__discount">15% off · Total R$ 714,00</span>
+        <ul class="tier-card__perks">
+          <li>Acesso ilimitado à academia</li>
+          <li>Sem taxa de matrícula</li>
+          <li>Ótimo custo-benefício</li>
+        </ul>
+        <a href="https://wa.me/558331422373?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Semestral%20da%20Academia%20Positive%20Clube." target="_blank" rel="noopener" class="btn btn--outline">Assinar</a>
+      </li>
+    </ul>
+
+    <div class="planos__mensal">
+      <div class="planos__mensal-info">
+        <span class="planos__mensal-label">Plano Mensal</span>
+        <span class="planos__mensal-price">R$ 140<small>/mês</small></span>
+      </div>
+      <p class="planos__mensal-text">
+        Sem fidelidade — cancele quando quiser. Ideal pra experimentar
+        a Academia Positive Clube antes de um plano maior.
+      </p>
+      <div class="planos__familia">
+        <strong>Plano Família:</strong> R$ 87,89/mês por pessoa para 2 ou mais.
+      </div>
+      <a href="https://wa.me/558331422373?text=Ol%C3%A1!%20Quero%20assinar%20o%20plano%20Mensal%20da%20Academia%20Positive%20Clube." target="_blank" rel="noopener" class="btn btn--outline">Assinar mensal</a>
+    </div>
+  </div>
+
+  <div class="container planos__avulso">
+    <h3 class="planos__sub-title">Monte seu plano por modalidade</h3>
+    <p class="planos__sub-text">
+      Prefere treinar só o que gosta? Escolha uma ou mais modalidades
+      avulsas e monte sua própria combinação.
+    </p>
+
+    <ul class="mod-grid" id="modGrid">
+      <li class="mod-card reveal" data-name="Musculação">
+        <span class="mod-card__name">Musculação</span>
+        <span class="mod-card__price">R$ 140<small>/mês</small></span>
+        <button class="mod-card__add" type="button">
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14"/></svg>
+          <span class="mod-card__add-label">Adicionar</span>
+        </button>
+      </li>
+      <li class="mod-card reveal" data-name="Lutas">
+        <span class="mod-card__name">Lutas</span>
+        <span class="mod-card__price">R$ 60<small>/mês</small></span>
+        <button class="mod-card__add" type="button">
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14"/></svg>
+          <span class="mod-card__add-label">Adicionar</span>
+        </button>
+      </li>
+      <li class="mod-card reveal" data-name="Natação">
+        <span class="mod-card__name">Natação</span>
+        <span class="mod-card__price">R$ 300<small>/mês</small></span>
+        <button class="mod-card__add" type="button">
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14"/></svg>
+          <span class="mod-card__add-label">Adicionar</span>
+        </button>
+      </li>
+      <li class="mod-card reveal" data-name="Hidroginástica">
+        <span class="mod-card__name">Hidroginástica</span>
+        <span class="mod-card__price">R$ 300<small>/mês</small></span>
+        <button class="mod-card__add" type="button">
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14"/></svg>
+          <span class="mod-card__add-label">Adicionar</span>
+        </button>
+      </li>
+      <li class="mod-card reveal" data-name="Vôlei">
+        <span class="mod-card__name">Vôlei</span>
+        <span class="mod-card__price">R$ 65,89<small>/mês</small></span>
+        <button class="mod-card__add" type="button">
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14"/></svg>
+          <span class="mod-card__add-label">Adicionar</span>
+        </button>
+      </li>
+      <li class="mod-card reveal" data-name="Beach Tênis">
+        <span class="mod-card__name">Beach Tênis</span>
+        <span class="mod-card__price">R$ 76,89<small>/mês</small></span>
+        <button class="mod-card__add" type="button">
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14"/></svg>
+          <span class="mod-card__add-label">Adicionar</span>
+        </button>
+      </li>
+      <li class="mod-card reveal" data-name="Crossfit">
+        <span class="mod-card__name">Crossfit</span>
+        <span class="mod-card__price">R$ 99,90<small>/mês</small></span>
+        <button class="mod-card__add" type="button">
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14"/></svg>
+          <span class="mod-card__add-label">Adicionar</span>
+        </button>
+      </li>
+      <li class="mod-card reveal" data-name="Funcional">
+        <span class="mod-card__name">Funcional</span>
+        <span class="mod-card__price">R$ 79,90<small>/mês</small></span>
+        <button class="mod-card__add" type="button">
+          <svg viewBox="0 0 24 24" class="icon"><path d="M12 5v14M5 12h14"/></svg>
+          <span class="mod-card__add-label">Adicionar</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="cart-bar" id="cartBar" hidden>
+    <div class="container cart-bar__row">
+      <div class="cart-bar__summary">
+        <svg viewBox="0 0 24 24" class="icon"><path d="M6 6h15l-1.5 9h-12z"/><path d="M6 6 5 3H2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
+        <span><strong id="cartCount">0</strong> modalidade(s) selecionada(s)</span>
+        <span class="cart-bar__items" id="cartItems"></span>
+      </div>
+      <a href="https://wa.me/558331422373" target="_blank" rel="noopener" id="cartWhatsapp" class="btn btn--cta">Falar com a gente</a>
+    </div>
+  </div>
+</section>
+
+<section class="familia" id="familia">
+  <div class="container">
+    <div class="familia__head">
+      <h2 class="familia__title">A família <span class="familia__title-accent">Positive</span></h2>
+      <p class="familia__subtitle">
+        Gente de verdade, resultado de verdade. Em breve, os rostos
+        da nossa comunidade aqui.
+      </p>
+    </div>
+
+    <ul class="familia__grid">
+      <li class="familia-card reveal">
+        <span class="familia-card__placeholder">Foto em breve</span>
+        <a href="https://www.instagram.com/positive.clube/" target="_blank" rel="noopener" class="familia-card__handle">
+          <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          @perfil
+        </a>
+      </li>
+      <li class="familia-card reveal">
+        <span class="familia-card__placeholder">Foto em breve</span>
+        <a href="https://www.instagram.com/positive.clube/" target="_blank" rel="noopener" class="familia-card__handle">
+          <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          @perfil
+        </a>
+      </li>
+      <li class="familia-card reveal">
+        <span class="familia-card__placeholder">Foto em breve</span>
+        <a href="https://www.instagram.com/positive.clube/" target="_blank" rel="noopener" class="familia-card__handle">
+          <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          @perfil
+        </a>
+      </li>
+      <li class="familia-card reveal">
+        <span class="familia-card__placeholder">Foto em breve</span>
+        <a href="https://www.instagram.com/positive.clube/" target="_blank" rel="noopener" class="familia-card__handle">
+          <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          @perfil
+        </a>
+      </li>
+      <li class="familia-card reveal">
+        <span class="familia-card__placeholder">Foto em breve</span>
+        <a href="https://www.instagram.com/positive.clube/" target="_blank" rel="noopener" class="familia-card__handle">
+          <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          @perfil
+        </a>
+      </li>
+      <li class="familia-card reveal">
+        <span class="familia-card__placeholder">Foto em breve</span>
+        <a href="https://www.instagram.com/positive.clube/" target="_blank" rel="noopener" class="familia-card__handle">
+          <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          @perfil
+        </a>
+      </li>
+      <li class="familia-card reveal">
+        <span class="familia-card__placeholder">Foto em breve</span>
+        <a href="https://www.instagram.com/positive.clube/" target="_blank" rel="noopener" class="familia-card__handle">
+          <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          @perfil
+        </a>
+      </li>
+      <li class="familia-card reveal">
+        <span class="familia-card__placeholder">Foto em breve</span>
+        <a href="https://www.instagram.com/positive.clube/" target="_blank" rel="noopener" class="familia-card__handle">
+          <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          @perfil
+        </a>
+      </li>
+      <li class="familia-card reveal">
+        <span class="familia-card__placeholder">Foto em breve</span>
+        <a href="https://www.instagram.com/positive.clube/" target="_blank" rel="noopener" class="familia-card__handle">
+          <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          @perfil
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<footer class="footer" id="contato">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <img src="assets/img/logo.svg" alt="Academia Positive Clube" class="footer__logo">
+      <p class="footer__tagline">
+        Muito mais que uma academia. Construímos o seu melhor, com
+        estrutura completa e comunidade de verdade.
+      </p>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__heading">Links rápidos</h3>
+      <a href="#sobre" class="footer__link">Sobre nós</a>
+      <a href="#modalidades" class="footer__link">Modalidades</a>
+      <a href="#horario" class="footer__link">Horário de funcionamento</a>
+      <a href="#planos" class="footer__link">Planos e preços</a>
+    </div>
+
+    <div class="footer__col">
+      <h3 class="footer__heading">Contato</h3>
+
+      <div class="footer__item">
+        <svg viewBox="0 0 24 24" class="icon"><path d="M12 2C7.6 2 4 5.6 4 10c0 5.4 7 11.5 7.3 11.8.2.1.4.2.7.2s.5-.1.7-.2C13 21.5 20 15.4 20 10c0-4.4-3.6-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+        <span>Av. Deputado Adauto Pereira de Lima<br>Alto Alegre, Itabaiana – PB</span>
+      </div>
+
+      <div class="footer__item">
+        <svg viewBox="0 0 24 24" class="icon"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.9c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg>
+        <span>
+          +55 83 3142-2373<br>
+          <a href="https://api.whatsapp.com/send/?phone=558331422373&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" rel="noopener" class="footer__link-inline">Chamar no WhatsApp</a>
+        </span>
+      </div>
+
+      <div class="footer__item">
+        <svg viewBox="0 0 24 24" class="icon"><path d="M2 6c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm2 0 8 6 8-6"/></svg>
+        <span><a href="mailto:academiapositiveclub@gmail.com" class="footer__link-inline">academiapositiveclub@gmail.com</a></span>
+      </div>
+
+      <div class="footer__item">
+        <svg viewBox="0 0 24 24" class="icon"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        <span><a href="https://www.instagram.com/positive.clube/" target="_blank" rel="noopener" class="footer__link-inline">@positive.clube</a></span>
+      </div>
+
+      <div class="footer__item">
+        <svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        <span>Seg – Sex: 5h às 23h<br>Sáb: 6h às 15h · Dom: 8h às 12h</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer__bottom">
+    <span>© 2026 Academia Positive Clube. Todos os direitos reservados.</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
