@@ -72,6 +72,13 @@ html, body {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(250, 249, 246, 0.08);
+  /* Força a nav pra sua própria camada de composição — sem isso, Safari/
+     WebKit mobile às vezes falha em repintar o conteúdo logo abaixo de um
+     elemento sticky com backdrop-filter, deixando um vão em branco até
+     rolar a página. */
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
 }
 
 .nav__row {
@@ -173,6 +180,8 @@ html, body {
     linear-gradient(to bottom, var(--azul-noite) 0%, transparent 22%, transparent 78%, var(--azul-noite) 100%),
     radial-gradient(700px circle at 10% -10%, rgba(33, 64, 122, 0.4), transparent 60%),
     radial-gradient(600px circle at 100% 80%, rgba(33, 64, 122, 0.3), transparent 60%);
+  position: relative;
+  isolation: isolate;
 }
 
 .hero__top {
