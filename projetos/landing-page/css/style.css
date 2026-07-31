@@ -30,6 +30,10 @@ html, body {
   font-family: var(--font-body);
   font-weight: 300;
   scroll-behavior: smooth;
+  /* Site é escuro por design — sem isso, o "dark mode forçado" de alguns
+     navegadores mobile (Android Chrome/Samsung Internet) tenta reescrever
+     as cores heuristicamente e pode deixar texto ilegível/invisível. */
+  color-scheme: dark;
 }
 
 .container {
@@ -1361,7 +1365,8 @@ html, body {
     text-align: center;
   }
 
-  .hero__content { max-width: 100%; }
+  .hero__content { flex: none; max-width: 100%; }
+  .hero__media { flex: none; }
   .hero__text { margin-left: auto; margin-right: auto; }
   .hero__actions { justify-content: center; }
   .hero__media { width: 100%; height: 320px; }
