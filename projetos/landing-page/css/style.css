@@ -191,13 +191,19 @@ html, body {
 .hero__top {
   display: flex;
   align-items: center;
-  gap: 40px;
-  padding-bottom: 56px;
+  min-height: 600px;
+  margin-bottom: 56px;
+  background-image:
+    linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.35) 45%, rgba(0, 0, 0, 0.08) 70%, transparent 100%),
+    url('../assets/img/hero-bg.png');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
 }
 
 .hero__content {
-  flex: 1 1 440px;
   max-width: 520px;
+  padding: 48px 0;
 }
 
 .hero__title {
@@ -230,47 +236,6 @@ html, body {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-}
-
-.hero__media {
-  position: relative;
-  flex: 1 1 520px;
-  display: flex;
-  align-items: stretch;
-  height: 460px;
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-
-.hero__photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 25%;
-}
-
-.hero__brand-strip {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 84px;
-  background: var(--dourado);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-}
-
-.hero__brand-strip-name {
-  font-family: var(--font-title);
-  font-weight: 800;
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
-  color: var(--azul-noite);
-  writing-mode: vertical-rl;
-  transform: rotate(180deg);
 }
 
 /* Features bar */
@@ -1388,15 +1353,33 @@ img.service-card__media {
   .menu__link:last-child { border-bottom: none; }
 
   .hero__top {
-    flex-direction: column;
-    text-align: center;
+    /* position-x mais baixo = mostra mais da área vazia da esquerda e
+       empurra o corpo dele pra mais longe/mais pra fora do quadro à
+       direita -- é isso que afasta, não o contrário. */
+    min-height: 460px;
+    margin-bottom: 40px;
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.4) 55%, rgba(0, 0, 0, 0.1) 100%),
+      url('../assets/img/hero-bg.png');
+    background-position: 52% 15%;
   }
 
-  .hero__content { flex: none; max-width: 100%; }
-  .hero__media { flex: none; }
-  .hero__text { margin-left: auto; margin-right: auto; }
-  .hero__actions { justify-content: center; }
-  .hero__media { width: 100%; height: 320px; }
+  .hero__content { max-width: 100%; padding: 32px 0; }
+
+  .hero__title {
+    font-size: 1.9rem;
+    margin-bottom: 14px;
+  }
+
+  .hero__text {
+    font-size: 0.92rem;
+    margin-bottom: 22px;
+  }
+
+  .hero__actions .btn--lg {
+    padding: 11px 20px;
+    font-size: 0.85rem;
+  }
 
   .sobre__row {
     flex-direction: column;
@@ -1462,6 +1445,10 @@ img.service-card__media {
   .familia { padding: 56px 0; }
   .familia__grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
 
+  /* Card fica pequeno demais no mobile pra reduzir 40% igual ao desktop
+     -- a foto quase some dentro da moldura. Recorte mais cheio aqui. */
+  .familia-card__photo { transform: scale(0.88); }
+
   .footer { padding-top: 56px; }
   .footer__grid { grid-template-columns: 1fr; text-align: center; gap: 36px; }
   .footer__brand { grid-column: auto; }
@@ -1470,7 +1457,7 @@ img.service-card__media {
 }
 
 @media (max-width: 560px) {
-  .features { grid-template-columns: 1fr; }
+  .features { grid-template-columns: repeat(2, 1fr); }
   .estrutura__grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
   .service-card { padding: 10px; }
   .service-card__text { font-size: 0.78rem; }
