@@ -501,6 +501,17 @@ html, body {
 .service-card__media {
   aspect-ratio: 3 / 4;
   border-radius: var(--radius);
+  margin-bottom: 16px;
+}
+
+img.service-card__media {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid rgba(198, 166, 100, 0.35);
+}
+
+.service-card__media.is-placeholder {
   background: linear-gradient(155deg, var(--azul-detalhe) 0%, var(--azul-noite-2) 45%, var(--rosy-taupe) 100%);
   border: 1px dashed rgba(198, 166, 100, 0.5);
   display: flex;
@@ -511,7 +522,6 @@ html, body {
   font-family: var(--font-title);
   font-weight: 600;
   font-size: 0.85rem;
-  margin-bottom: 16px;
 }
 
 .service-card__label {
