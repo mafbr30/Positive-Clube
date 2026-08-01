@@ -1119,6 +1119,26 @@ img.service-card__media {
   position: relative;
   aspect-ratio: 3 / 4;
   border-radius: var(--radius);
+  overflow: hidden;
+  background: linear-gradient(155deg, var(--azul-detalhe) 0%, var(--azul-noite-2) 45%, var(--rosy-taupe) 100%);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.familia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+}
+
+.familia-card__photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(0.6);
+  transform-origin: center;
+}
+
+.familia-card.is-placeholder {
   border: 1px dashed rgba(198, 166, 100, 0.5);
   background: linear-gradient(155deg, var(--azul-detalhe) 0%, var(--azul-noite-2) 45%, var(--rosy-taupe) 100%);
   display: flex;
@@ -1129,14 +1149,10 @@ img.service-card__media {
   font-family: var(--font-title);
   font-weight: 600;
   font-size: 0.8rem;
-  overflow: hidden;
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.familia-card:hover {
-  transform: translateY(-5px);
+.familia-card.is-placeholder:hover {
   border-color: var(--dourado);
-  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
 }
 
 .familia-card__placeholder {
